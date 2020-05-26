@@ -45,12 +45,12 @@
             }
             //get random whole numbers in a specific range
             function getRandomInt(min, max){
-                return Math.floor(Math.random()* (max - min) + min);
+                return Math.floor(Math.random()* (max - min)) + min);
             }
             //game loop 
             function loop(){
                 requestAnimationFrame(loop);
-                //slow game loop to 15fps instead of 60 (60/15 =4)
+                
                 if (++count < 4 ){
                     return;
                 }
